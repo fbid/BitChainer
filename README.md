@@ -4,7 +4,7 @@
 
 `$ pip install sox`
 
-`$ python chanr.py`
+`$ python main.py`
 
 _
 
