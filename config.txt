@@ -1,0 +1,8 @@
+[Config]
+
+source_directory = _in
+output_directory = out
+cut_silence = on
+normalize = on
+sample_padding = 0.3
+individual_samples = off
