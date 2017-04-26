@@ -4,7 +4,6 @@ from soundProcessing import _processAndConcat
 from os.path import exists
 from os import makedirs
 
-
 def main():
     # Mapping samples
     samples = _mapping(src_path)
