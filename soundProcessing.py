@@ -1,4 +1,4 @@
-import os.path import join
+from os.path import join
 from sox import Transformer, Combiner
 from utility import _renameSample, _removeIndividualSamples
 from setup import out_path
