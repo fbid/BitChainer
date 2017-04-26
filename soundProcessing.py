@@ -1,5 +1,22 @@
-import sox, os
+import os
+from sox import Transformer, Combiner
+from utility import _renameSample, _removeIndividualSamples
+from setup import out_path
+from setup import NORMALIZE, SILENCE, PADDING, INDIVIDUAL_SAMPLES
 
+# Processed samples list
+processed_samples = []
+
+def _processAndConcat(sample_list):
+
+    # Samples processing
+    _processSamples(sample_list)
+
+    # Ask the user how he wants to call the sample chain
+    chain_name = raw_input('How do you wanna call the sample chain? : ')
+
+    # Samples concatenation
+    _concatSamples(sample_list, chain_name)
 
 def _processSamples(sample_list):
 
@@ -17,7 +34,7 @@ def _processSamples(sample_list):
         _in = sample
 
         # Lettura file e Conversione
-        tfm = sox.Transformer()
+        tfm = Transformer()
 
         tfm.convert(samplerate=44100, n_channels=2, bitdepth=16)
 
@@ -37,6 +54,10 @@ def _concatSamples(sample_list, output_chain_name):
 
     output_chain_name += '.wav'
 
-    cbn = sox.Combiner()
+    cbn = Combiner()
 
     cbn.build(sample_list, os.path.join(out_path,output_chain_name) , 'concatenate')
+
+    # Remove the individual samples before the chain is created
+    if not INDIVIDUAL_SAMPLES:
+        _removeIndividualSamples(processed_samples)
