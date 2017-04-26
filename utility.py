@@ -34,6 +34,5 @@ def _renameSample(sample_path):
     return sample_name
 
 def _removeIndividualSamples(samples):
-
     for file in samples:
         remove(file)

@@ -1,19 +1,15 @@
-from mapping import _mapping
+from mapping import _mapping as _map
 from setup import src_path, out_path
-from soundProcessing import _processAndConcat
+from soundProcessing import _processAndConcat as _proc
 from os.path import exists
 from os import makedirs
 
 def main():
-    # Mapping samples
-    samples = _mapping(src_path)
+    samples = _map(src_path)
 
-    # Create new folder with Album_Title name
     if not exists(out_path):
         makedirs(out_path)
 
-    # Sample processing, concatenation & output
-    _processAndConcat(samples)
-
+    _proc(samples)
 
 main()
