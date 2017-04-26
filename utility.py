@@ -28,7 +28,6 @@ def _renameSample(sample_path):
     #space removal
     sample_name = sample_name.replace(' ', '_');
 
-
     # append extension
     sample_name += '.wav'
 
