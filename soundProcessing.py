@@ -1,4 +1,4 @@
-import os
+import os.path import join
 from sox import Transformer, Combiner
 from utility import _renameSample, _removeIndividualSamples
 from setup import out_path
@@ -20,7 +20,7 @@ def _processSamples(sample_list):
         sample_new_name = _renameSample(sample)
 
         # Join output path with new name
-        _out = os.path.join(out_path,sample_new_name)
+        _out = join(out_path,sample_new_name)
 
         # Saves the file path in the processed samples list
         processed_samples.append(_out);
@@ -49,7 +49,7 @@ def _concatSamples(sample_list, output_chain_name):
     output_chain_name += '.wav'
 
     cbn = Combiner()
-    cbn.build(sample_list, os.path.join(out_path,output_chain_name) , 'concatenate')
+    cbn.build(sample_list, join(out_path,output_chain_name) , 'concatenate')
 
     # Remove the individual samples before the chain is created
     if not INDIVIDUAL_SAMPLES:
