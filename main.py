@@ -5,8 +5,6 @@ from os.path import exists
 from os import makedirs
 
 
-# -- Procedures
-
 def main():
     # Mapping samples
     samples = _mapping(src_path)
