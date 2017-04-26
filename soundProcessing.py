@@ -8,14 +8,8 @@ from setup import NORMALIZE, SILENCE, PADDING, INDIVIDUAL_SAMPLES
 processed_samples = []
 
 def _processAndConcat(sample_list):
-
-    # Samples processing
-    _processSamples(sample_list)
-
-    # Ask the user how he wants to call the sample chain
     chain_name = raw_input('How do you wanna call the sample chain? : ')
-
-    # Samples concatenation
+    _processSamples(sample_list)
     _concatSamples(sample_list, chain_name)
 
 def _processSamples(sample_list):
@@ -55,7 +49,6 @@ def _concatSamples(sample_list, output_chain_name):
     output_chain_name += '.wav'
 
     cbn = Combiner()
-
     cbn.build(sample_list, os.path.join(out_path,output_chain_name) , 'concatenate')
 
     # Remove the individual samples before the chain is created
