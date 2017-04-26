@@ -1,9 +1,3 @@
-# Audio Files #
-###############
-*.wav
-*.aiff
-
-
 # Python Compiled files #
 #########################
 *.pyc
@@ -11,3 +5,8 @@
 # Hidden files #
 ################
 .*
+
+# Audio Files #
+###############
+*.wav
+*.aiff
