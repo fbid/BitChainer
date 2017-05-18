@@ -10,12 +10,12 @@ _
 
 **CUSTOM PREFERENCES:**
 
-1. Audio normalization
-2. Remove Silence
-4. Add padding between samples
-3. Keep individual samples
+- Audio normalization
+- Remove Silence
+- Add padding between samples
+- Keep individual samples
 
--
+_
 
 **TO DO LIST**
 1. Support for mp3 files
