@@ -1,0 +1,15 @@
+# Python Compiled files #
+#########################
+*.pyc
+
+# Hidden files #
+################
+.hg
+.svn
+.DS_Store
+Thumbs.db
+
+# Audio Files #
+###############
+.wav
+.aiff
