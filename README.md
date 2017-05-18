@@ -15,6 +15,7 @@ _
 4. Add padding between samples
 3. Keep individual samples
 
+-
 
 **TO DO LIST**
 1. Support for mp3 files
