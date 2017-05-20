@@ -1,16 +1,6 @@
 from os import remove
 from OSSniffer import path_slash
 
-def _removeVowels(text):
-    vow = ['a','e','i','o','u']
-    chars = []
-
-    for i in text:
-        if i not in vow:
-            chars.append(i)
-
-    return "".join(chars)
-
 def _renameSample(sample_path):
 
     # Extract sample name
@@ -21,9 +11,6 @@ def _renameSample(sample_path):
 
     #lowercase conversion
     sample_name.lower()
-
-    #remove vowels from sample name
-    sample_name = _removeVowels(sample_name)
 
     #space removal
     sample_name = sample_name.replace(' ', '_');
