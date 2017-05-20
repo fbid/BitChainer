@@ -2,14 +2,15 @@
 #########################
 *.pyc
 
-# Hidden files #
+# Audio Files #
+###############
+.wav
+.aiff
+.mp3
+
+# Hidden files & others #
 ################
 .hg
 .svn
 .DS_Store
 Thumbs.db
-
-# Audio Files #
-###############
-.wav
-.aiff
