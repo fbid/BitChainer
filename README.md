@@ -1,26 +1,5 @@
 # BitChainer
 
-### NOTE: This is repo is obsolete.
-### Please refer to [this]('https://github.com/fbid/Soundub') repo for a more updated version. 
+### NOTE! : This is repo is obsolete.
 
-**TO RUN THE SCRIPT**
-
-`$ pip install sox`
-
-`$ python main.py`
-
-_
-
-**CUSTOM PREFERENCES:**
-
-- Audio normalization
-- Remove Silence
-- Add padding between samples
-- Keep individual samples
-
-_
-
-**TO DO LIST**
-1. Support for mp3 files
-2. Improve customization
-3. UI
+:arrow_right: Please refer to [this repo](https://github.com/fbid/Soundub) for a more updated version.
