@@ -1,6 +1,8 @@
-from os import walk, path
+from os import walk, path, chdir
+from os.path import join
 from sys import exit
 from OSSniffer import path_slash
+
 
 def _mapping(_path):
 
@@ -12,7 +14,7 @@ def _mapping(_path):
             # For each sample in the current folder
 
             if sample.endswith('.wav') or sample.endswith('.aiff'):
-                sample_path = path.join(paths,sample)
+                sample_path = join(paths,sample)
                 sample_list.append(sample_path)
 
             elif not sample.startswith('.'):
