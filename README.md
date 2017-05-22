@@ -1,5 +1,8 @@
 # BitChainer
 
+### NOTE: This is repo is obsolete.
+### Please refer to [this]('https://github.com/fbid/Soundub') repo for a more updated version. 
+
 **TO RUN THE SCRIPT**
 
 `$ pip install sox`

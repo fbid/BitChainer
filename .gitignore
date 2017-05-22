@@ -4,13 +4,16 @@
 
 # Audio Files #
 ###############
-.wav
-.aiff
-.mp3
+*.wav
+*.aiff
+*.mp3
 
-# Hidden files & others #
-################
-.hg
-.svn
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
